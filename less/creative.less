@@ -165,9 +165,10 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    //background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
+    width: 100%;
     .header-content {
         position: relative;
         text-align: center;
@@ -193,12 +194,11 @@ header {
         }
     }
     @media (min-width: 768px) {
-        min-height: 100%;
         .background-cover;
         background-position: center;
-        background-image: url('../img/header.jpg');
         text-align: center;
         color: white;
+        width: 100%;
         .header-content {
             position: absolute;
             top: 50%;
@@ -221,6 +221,19 @@ header {
                 }
             }
         }
+    }
+    @media (max-width: 768px) {
+        min-height: 100%;
+        #headvid{
+            display: none !important;
+            height: 100%;
+        }
+        .background-cover;
+        background-position: center;
+        background-image: url('../img/header.jpg');
+        text-align: center;
+        color: white;
+        width: 100%;
     }
 }
 
