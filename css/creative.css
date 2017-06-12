@@ -231,6 +231,9 @@ header .header-content .header-content-inner p {
     display: none !important;
     height: 100%;
   }
+  header .header-content-inner {
+    margin-top: 30%;
+  }
 }
 .section-heading {
   margin-top: 0;
